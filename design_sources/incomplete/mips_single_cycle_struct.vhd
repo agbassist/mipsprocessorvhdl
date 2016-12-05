@@ -46,12 +46,9 @@ ARCHITECTURE struct OF mips_single_cycle IS
    SIGNAL zero                                        : std_logic;
    SIGNAL overflow                                    : std_logic;
    
-   SIGNAL BNE                                    : std_logic;
-   SIGNAL JAL                                    : std_logic;
-   SIGNAL JR                                     : std_logic;
-   SIGNAL second_i2_result                       : std_logic_vector(31 DOWNTO 0);
-   SIGNAL mux_second_i4_output                   : std_logic_vector(31 DOWNTO 0);
-   
+   SIGNAL bne                                    : std_logic;
+   SIGNAL jal                                    : std_logic;
+   SIGNAL jr                                    : std_logic;
 
 
    -- Component Declarations
@@ -101,24 +98,27 @@ ARCHITECTURE struct OF mips_single_cycle IS
    );
    END COMPONENT;
    
-   COMPONENT Main_Control_Unit
-   PORT (
-        Instruction_31_26 : IN     std_logic_vector (5 DOWNTO 0);
-        Instruction_5_0   : IN     std_logic_vector (5 DOWNTO 0);
-        ALUOp             : OUT    std_logic_vector (1 DOWNTO 0);
-        ALUSrc            : OUT    std_logic;
-        Branch            : OUT    std_logic;
-        Jump              : OUT    std_logic;
-        MemRead           : OUT    std_logic;
-        MemToReg          : OUT    std_logic;
-        MemWrite          : OUT    std_logic;
-        RegDst            : OUT    std_logic;
-        RegWrite          : OUT    std_logic;
-        BNE               : OUT    std_logic;
-        JR                : OUT    std_logic;
-        JAL               : OUT    std_logic
-   );
-   END COMPONENT;
+   COMPONENT Main_Control_Unit IS
+      PORT( 
+         Instruction_31_26 : IN     std_logic_vector (5 DOWNTO 0);
+         Instruction_5_0 : IN     std_logic_vector (5 DOWNTO 0);
+         ALUOp             : OUT    std_logic_vector (1 DOWNTO 0);
+         ALUSrc            : OUT    std_logic;
+         Branch            : OUT    std_logic;
+         Jump              : OUT    std_logic;
+         MemRead           : OUT    std_logic;
+         MemToReg          : OUT    std_logic;
+         MemWrite          : OUT    std_logic;
+         RegDst            : OUT    std_logic;
+         RegWrite          : OUT    std_logic;
+         
+         jr  : OUT std_logic;
+         bne : OUT    std_logic;
+         jal : OUT    std_logic
+         
+      );
+      
+   END COMPONENT ;
    
    COMPONENT PC_register
    PORT (
@@ -165,15 +165,15 @@ ARCHITECTURE struct OF mips_single_cycle IS
    );
    END COMPONENT;
    
-   COMPONENT mux_first
-   PORT (
-        input_0 : IN     std_logic_vector (4 DOWNTO 0);
-        input_1 : IN     std_logic_vector (4 DOWNTO 0);
-        sel     : IN     std_logic;
-        jal     : IN     std_logic;
-        output  : OUT    std_logic_vector (4 DOWNTO 0)
-   );
-   END COMPONENT;
+   COMPONENT mux_first IS
+      PORT( 
+         input_0 : IN     std_logic_vector (4 DOWNTO 0);
+         input_1 : IN     std_logic_vector (4 DOWNTO 0);
+         sel     : IN     std_logic;
+         jal     : in std_logic;
+         output  : OUT    std_logic_vector (4 DOWNTO 0)
+      );
+   END COMPONENT ;
    
    COMPONENT mux_second
    PORT (
@@ -191,13 +191,13 @@ ARCHITECTURE struct OF mips_single_cycle IS
    );
    END COMPONENT;
    
-   COMPONENT new_mux IS
+   COMPONENT three_input_mux IS
       PORT( 
          input_0 : IN     std_logic_vector (31 DOWNTO 0);
          input_1 : IN     std_logic_vector (31 DOWNTO 0);
          input_2 : IN     std_logic_vector (31 DOWNTO 0);
          sel_0     : IN     std_logic;
-         sel_1     : IN std_logic;
+         sel_1     : IN     std_logic;
          output  : OUT    std_logic_vector (31 DOWNTO 0)
       );
    END COMPONENT ;
@@ -205,7 +205,7 @@ ARCHITECTURE struct OF mips_single_cycle IS
 
 BEGIN
 
-   branch_when_equal <= (branch AND zero) OR (BNE AND not(zero));
+   branch_when_equal <= (branch and zero) or (bne and not zero);
 
    jump_address <= (PC_icremented(31 downto 28) & Instruction_25_0_Left_Shifted);
 
@@ -254,7 +254,7 @@ BEGIN
    main_control_unit_i1 : Main_Control_Unit
       PORT MAP (
          Instruction_31_26 => Instruction(31 DOWNTO 26),
-         Instruction_5_0   => Instruction(5 DOWNTO 0),
+         Instruction_5_0 => Instruction(5 Downto 0),
          ALUOp             => ALUOp,
          ALUSrc            => ALUSrc,
          Branch            => Branch,
@@ -264,9 +264,9 @@ BEGIN
          MemWrite          => MemWrite,
          RegDst            => RegDst,
          RegWrite          => RegWrite,
-         JAL               => JAL,
-         JR                => JR,
-         BNE               => BNE 
+         jr => jr,
+         jal => jal,
+         bne => bne
       );
    
    pc_register_i1 : PC_register
@@ -308,13 +308,13 @@ BEGIN
          B          => Instruction_15_0_Sign_Extended_Left_Shifted,
          add_result => adder_second_result
       );
-   
+----------------------------------------------------------------------------------------   
    mux_first_i1 : mux_first--
       PORT MAP (
-         input_0           => Instruction(20 DOWNTO 16),
-         input_1           => Instruction(15 DOWNTO 11),
+         input_0 => Instruction(20 DOWNTO 16),
+         input_1 => Instruction(15 DOWNTO 11),
          sel               => RegDst,
-         jal               => JAL,
+         jal               => jal,
          output            => regfile_WriteAddr
       );
    
@@ -325,8 +325,8 @@ BEGIN
          sel     => ALUSrc,
          output  => alu_second_operand
       );
-   ---------------------------------------------------
-   mux_second_i3 : mux_second--
+   
+   mux1 : mux_second--
       PORT MAP (
          input_0 => PC_icremented,
          input_1 => adder_second_result,
@@ -334,25 +334,25 @@ BEGIN
          output  => mux_second_i3_output
       );
    
-   mux_second_i4 : new_mux--
+   mux_second_i4 : three_input_mux--
       PORT MAP (
          input_0 => mux_second_i3_output,
          input_1 => jump_address,
          input_2 => regfile_ReadData_1,
          sel_0     => Jump,
-         sel_1     => JR,
+         sel_1 => jr,
          output  => PC_next
       );
-   -------------------------------------------------
-   mux_second_i2 : new_mux--
+   
+   mux_second_i2 : three_input_mux--
       PORT MAP (
          input_0 => ALU_result,
          input_1 => dm_ReadData,
          input_2 => PC_icremented,
          sel_0     => MemToReg,
-         sel_1 => JAL,
+         sel_1     => jal,
          output  => regfile_WriteData
-      );-------------------------------------------------------
+      );
    
    sign_extend_i1 : sign_extend
       PORT MAP (
