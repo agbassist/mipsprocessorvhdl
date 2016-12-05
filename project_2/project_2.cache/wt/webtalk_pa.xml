@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Mon Dec 05 17:26:09 2016">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="e219d2685a084966aab3088a8aef5dff" type="ProjectID"/>
+<property name="ProjectIteration" value="1" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="AddSources" value="3" type="JavaHandler"/>
+<property name="EditRedo" value="13" type="JavaHandler"/>
+<property name="EditUndo" value="11" type="JavaHandler"/>
+<property name="OpenProject" value="1" type="JavaHandler"/>
+<property name="ProjectSettingsCmdHandler" value="1" type="JavaHandler"/>
+<property name="RunSchematic" value="1" type="JavaHandler"/>
+<property name="SaveFileProxyHandler" value="1" type="JavaHandler"/>
+<property name="SimulationClose" value="6" type="JavaHandler"/>
+<property name="SimulationRun" value="7" type="JavaHandler"/>
+<property name="WaveformSaveConfiguration" value="1" type="JavaHandler"/>
+<property name="ZoomIn" value="8" type="JavaHandler"/>
+<property name="ZoomOut" value="4" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="FINISH, Finish" value="4" type="GuiResourceData"/>
+<property name="NEXT, Next " value="3" type="GuiResourceData"/>
+<property name="OK, OK" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.AddSrcWizard_SPECIFY_HDL_AND_NETLIST_FILES_OR_DIRECTORIES, Add or create design sources" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.AddSrcWizard_SPECIFY_SIMULATION_SPECIFIC_HDL_FILES, Add or create simulation sources" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_OPEN_PROJECT, Open Project..." value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, Run Behavioral Simulation" value="7" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_ZOOM_IN, Schematic_zoom_in" value="2" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_ZOOM_OUT, Schematic_zoom_out" value="3" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, mips_single_cycle - struct (mips_single_cycle_struct.vhd" value="16" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, mux_second - struct (three_input_mux.vhd" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Project Manager, Add Sources], 2, false" value="3" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, RTL Analysis, Open Elaborated Design, Schematic], 17, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, RTL Analysis, Open Elaborated Design], 14" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Simulation, Run Simulation], 11, false" value="7" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Simulation, Simulation Settings], 10, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_FILE, File" value="2" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PAViews_CODE, Code" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProjectSettingsSimulationPanel_TABBED_PANE, PAResourceOtoP.ProjectSettingsSimulationPanel_SIMULATION, Simulation, 2" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, Instruction[31:0] ; 08100002 ; Array, 2, Instruction[31:0], 0, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, Instruction[31:0] ; 08100002 ; Array, 2, Instruction[31:0], 0, true, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, dm_mem[0:127][31:0] ; 00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000007,00000005 ; Array, 7, dm_mem[0:127][31:0], 0, true" value="2" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, dm_mem[0:127][31:0] ; 00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000007,00000005 ; Array, 7, dm_mem[0:127][31:0], 0, true, false, false, false, true, false" value="2" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, im_mem[0:15][31:0] ; 20080005,20090007,afa80000,afa9fffc,8fb00000,8fb1fffc,12110002,02119820,0810000a,02119822,02138020,02338825,21080003,21290003,23bdfff8,08100002 ; Array, 3, im_mem[0:15][31:0], 0, true" value="2" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, im_mem[0:15][31:0] ; 20080005,20090007,afa80000,afa9fffc,8fb00000,8fb1fffc,12110002,02119820,0810000a,02119822,02138020,02338825,21080003,21290003,23bdfff8,08100002 ; Array, 3, im_mem[0:15][31:0], 0, true, false, false, false, true, false" value="2" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, reg_file_mem[0:31][31:0] ; 00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000008,0000000a,00000000,00000000,00000000,00000000,00000000,00000000,100101f8,100101f8,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,100101f4,00000000,00000000 ; Array, 9, reg_file_mem[0:31][31:0], 0, true" value="2" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, reg_file_mem[0:31][31:0] ; 00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000008,0000000a,00000000,00000000,00000000,00000000,00000000,00000000,100101f8,100101f8,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,100101f4,00000000,00000000 ; Array, 9, reg_file_mem[0:31][31:0], 0, true, false, false, false, true, false" value="2" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, alu_controller_i1 ; ALU_controller(struct" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, dm_i1 ; DM(struct_4byte_wide" value="2" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, im_i1 ; IM(struct_4byte_wide" value="3" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, pc_register_i1 ; PC_register(struct" value="2" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, regfile_i1 ; RegFile(struct" value="3" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, uut ; mips_single_cycle(struct" value="2" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcChooserPanel_ADD_DIRECTORIES, Add Directories" value="2" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, Add Files" value="1" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_OK, OK" value="7" type="GuiResourceData"/>
+<property name="RDIResource.GraphicalView_ZOOM_FIT, Waveform Viewer_zoom_fit" value="8" type="GuiResourceData"/>
+<property name="RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, Instruction Memory Value is:" value="1" type="GuiResourceData"/>
+<property name="RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 278, 66" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, Data Memory], 3, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, Instruction Memory], 3, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, Instruction[31:0]], 17" value="2" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, Instruction[31:0]], 25" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, Instruction[31:0]], 3, true" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, Instruction[31:0]], 8" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, PC[31:0]], 2" value="2" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, Register File], 3, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, dm_mem[0:127][31:0], [63][31:0]], 11, true" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, dm_mem[0:127][31:0], [64][31:0]], 12" value="2" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, dm_mem[0:127][31:0], [64][31:0]], 12, true, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, dm_mem[0:127][31:0]], 10, true" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, dm_mem[0:127][31:0]], 12" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, dm_mem[0:127][31:0]], 3" value="3" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, dm_mem[0:127][31:0]], 4, true" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, dm_mem[0:127][31:0]], 6" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, dm_mem[0:127][31:0]], 9" value="3" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, dm_mem[0:127][31:0]], 9, true" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, im_mem[0:15][31:0]], 10, true" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, im_mem[0:15][31:0]], 11" value="2" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, im_mem[0:15][31:0]], 4, true" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, im_mem[0:15][31:0]], 7" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, im_mem[0:15][31:0]], 7, true" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, im_mem[0:37][31:0]], 23" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, reg_file_mem[0:31][31:0], [29][31:0]], 8, true, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, reg_file_mem[0:31][31:0]], 10" value="2" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, reg_file_mem[0:31][31:0]], 10, true" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, reg_file_mem[0:31][31:0]], 10, true, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, reg_file_mem[0:31][31:0]], 14" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, reg_file_mem[0:31][31:0]], 24" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, reg_file_mem[0:31][31:0]], 4" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, reg_file_mem[0:31][31:0]], 4, true" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, reg_file_mem[0:31][31:0]], 5" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, reg_file_mem[0:31][31:0]], 5, true" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, reg_file_mem[0:31][31:0]], 7" value="1" type="GuiResourceData"/>
+<property name="RDIResourceCommand.RDICommands_REDO, redo" value="13" type="GuiResourceData"/>
+<property name="RDIResourceCommand.RDICommands_UNDO, undo" value="11" type="GuiResourceData"/>
+<property name="im_4byte_wide.vhd, 118, 356" value="1" type="GuiResourceData"/>
+<property name="im_4byte_wide.vhd, 282, 140" value="1" type="GuiResourceData"/>
+<property name="im_4byte_wide.vhd, 43, 259" value="1" type="GuiResourceData"/>
+<property name="im_4byte_wide.vhd, 94, 264" value="1" type="GuiResourceData"/>
+<property name="im_4byte_wide.vhd, 95, 314" value="1" type="GuiResourceData"/>
+<property name="mips_cu_behav.vhd, 117, 146" value="1" type="GuiResourceData"/>
+<property name="mips_cu_behav.vhd, 120, 284" value="1" type="GuiResourceData"/>
+<property name="mips_cu_behav.vhd, 128, 40" value="1" type="GuiResourceData"/>
+<property name="mips_cu_behav.vhd, 128, 40, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="mips_cu_behav.vhd, 140, 335" value="1" type="GuiResourceData"/>
+<property name="mips_cu_behav.vhd, 147, 182" value="1" type="GuiResourceData"/>
+<property name="mips_cu_behav.vhd, 167, 257" value="1" type="GuiResourceData"/>
+<property name="mips_cu_behav.vhd, 169, 209" value="1" type="GuiResourceData"/>
+<property name="mips_cu_behav.vhd, 170, 246" value="1" type="GuiResourceData"/>
+<property name="mips_cu_behav.vhd, 171, 281" value="1" type="GuiResourceData"/>
+<property name="mips_cu_behav.vhd, 173, 337" value="1" type="GuiResourceData"/>
+<property name="mips_cu_behav.vhd, 184, 314" value="1" type="GuiResourceData"/>
+<property name="mips_cu_behav.vhd, 185, 230" value="1" type="GuiResourceData"/>
+<property name="mips_cu_behav.vhd, 194, 192" value="1" type="GuiResourceData"/>
+<property name="mips_cu_behav.vhd, 206, 112" value="1" type="GuiResourceData"/>
+<property name="mips_cu_behav.vhd, 209, 230" value="1" type="GuiResourceData"/>
+<property name="mips_cu_behav.vhd, 268, 350" value="1" type="GuiResourceData"/>
+<property name="mips_cu_behav.vhd, 276, 452" value="1" type="GuiResourceData"/>
+<property name="mips_cu_behav.vhd, 298, 196" value="1" type="GuiResourceData"/>
+<property name="mips_cu_behav.vhd, 304, 194" value="1" type="GuiResourceData"/>
+<property name="mips_cu_behav.vhd, 44, 248" value="1" type="GuiResourceData"/>
+<property name="mips_cu_behav.vhd, 447, 42" value="1" type="GuiResourceData"/>
+<property name="mips_cu_behav.vhd, 448, 44" value="1" type="GuiResourceData"/>
+<property name="mips_cu_behav.vhd, 64, 184" value="1" type="GuiResourceData"/>
+<property name="mips_cu_behav.vhd, 68, 404" value="1" type="GuiResourceData"/>
+<property name="mips_cu_behav.vhd, 78, 147" value="1" type="GuiResourceData"/>
+<property name="mips_cu_behav.vhd, 78, 147, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="mips_cu_behav.vhd, 89, 153" value="1" type="GuiResourceData"/>
+<property name="mips_cu_behav.vhd, 97, 328" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 100, 266" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 100, 266, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 100, 53" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 100, 53, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 104, 240" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 104, 240, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 106, 282" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 106, 282, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 109, 76" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 113, 84" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 117, 247" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 122, 162" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 128, 178" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 129, 218" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 129, 218, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 130, 147" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 130, 147, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 130, 243" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 137, 208" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 140, 78" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 149, 178" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 155, 228" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 160, 176" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 161, 218" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 162, 129" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 162, 129, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 167, 144" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 169, 260" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 172, 259" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 172, 259, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 179, 181" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 179, 181, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 181, 80" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 181, 80, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 183, 251" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 183, 251, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 185, 198" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 185, 198, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 189, 230" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 201, 301" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 205, 200" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 209, 77" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 221, 252" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 223, 234" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 225, 214" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 225, 214, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 225, 92" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 227, 312" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 231, 282" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 235, 207" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 240, 192" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 243, 152" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 243, 248" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 257, 224" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 275, 282" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 277, 141" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 279, 248" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 298, 250" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 311, 93" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 313, 146" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 315, 92" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 335, 124" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 392, 92" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 398, 127" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 434, 245" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 435, 262" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 46, 90" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 46, 90, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 469, 214" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 49, 142" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 49, 142, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 490, 78" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 50, 73" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 50, 73, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 53, 214" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 53, 214, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 54, 54" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 54, 54, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 68, 30" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 68, 30, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 68, 70" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 78, 213" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 78, 213, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 79, 44" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 79, 44, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 81, 274" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 81, 322" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 86, 248" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 88, 198" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 88, 198, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 90, 248" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 90, 248, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 91, 223" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 97, 113" value="1" type="GuiResourceData"/>
+<property name="mips_single_cycle_struct.vhd, 97, 113, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="mux_first.vhd, 110, 213" value="1" type="GuiResourceData"/>
+<property name="mux_first.vhd, 121, 217" value="1" type="GuiResourceData"/>
+<property name="mux_first.vhd, 139, 264" value="1" type="GuiResourceData"/>
+<property name="mux_first.vhd, 163, 220" value="1" type="GuiResourceData"/>
+<property name="mux_first.vhd, 165, 278" value="1" type="GuiResourceData"/>
+<property name="mux_first.vhd, 236, 265" value="1" type="GuiResourceData"/>
+<property name="mux_first.vhd, 274, 88" value="1" type="GuiResourceData"/>
+<property name="mux_first.vhd, 276, 249" value="1" type="GuiResourceData"/>
+<property name="mux_first.vhd, 295, 260" value="1" type="GuiResourceData"/>
+<property name="three_input_mux.vhd, 164, 230" value="1" type="GuiResourceData"/>
+<property name="three_input_mux.vhd, 183, 261" value="1" type="GuiResourceData"/>
+<property name="three_input_mux.vhd, 183, 261, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="three_input_mux.vhd, 208, 229" value="1" type="GuiResourceData"/>
+<property name="three_input_mux.vhd, 215, 241" value="1" type="GuiResourceData"/>
+<property name="three_input_mux.vhd, 217, 262" value="1" type="GuiResourceData"/>
+<property name="three_input_mux.vhd, 252, 177" value="1" type="GuiResourceData"/>
+<property name="three_input_mux.vhd, 360, 268" value="1" type="GuiResourceData"/>
+<property name="three_input_mux.vhd, 361, 263" value="1" type="GuiResourceData"/>
+<property name="three_input_mux.vhd, 383, 142" value="1" type="GuiResourceData"/>
+<property name="three_input_mux.vhd, 66, 178" value="1" type="GuiResourceData"/>
+<property name="three_input_mux.vhd, 75, 217" value="1" type="GuiResourceData"/>
+<property name="three_input_mux.vhd, 75, 217, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="three_input_mux.vhd, 80, 200" value="1" type="GuiResourceData"/>
+<property name="three_input_mux.vhd, 87, 97" value="3" type="GuiResourceData"/>
+<property name="three_input_mux.vhd, 87, 97, false, false, false, false, true" value="2" type="GuiResourceData"/>
+<property name="three_input_mux.vhd, 93, 160" value="1" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="23" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="18" type="TclMode"/>
+</item>
+</section>
+</application>
+</document>
